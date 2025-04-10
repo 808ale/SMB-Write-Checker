@@ -8,7 +8,7 @@
 
 # ------------------------------------------------------------------------------
 # Name: smb_write_checker.sh
-# Author: 808ale
+# Author: Rafael Pimentel (808ale)
 #
 # Description:
 #   Checks for writable directories within an SMB share by attempting to upload
