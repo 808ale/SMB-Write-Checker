@@ -48,7 +48,7 @@ fi
 touch test
 
 # recursively list all directories
-echo "[*] Now running: smbclient \"//$TARGET/$SHARE\" -U \"$USERNAME%$PASSWORD\" -c \"recurse; dir\" | grep \"\\\\\" > dirs.txt\""
+echo "[*] Now running: smbclient //$TARGET/$SHARE -U \"$USERNAME%$PASSWORD\" -c \"recurse; dir\" | grep \"\\\\\\\\\" > dirs.txt\""
 
 smbclient "//$TARGET/$SHARE" -U "$USERNAME%$PASSWORD" -c "recurse; dir" | grep "\\\\" > dirs.txt
 
