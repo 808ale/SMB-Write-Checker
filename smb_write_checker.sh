@@ -58,7 +58,7 @@ sed -i 's/\\/\//g' dirs.txt
 # try uploading a test file to each directory
 for dir in $(cat dirs.txt); do
     echo "[*] Testing write access in: $dir"
-    smbclient "//$TARGET/$SHARE" -U "$USERNAME%$PASSWORD" -c "cd $dir; put test" && echo -e "\e[32m[+] Writable: $dir\e[0m"
+    smbclient "//$TARGET/$SHARE" -U "$USERNAME%$PASSWORD" -c "cd $dir; put test; rm test" && echo -e "\e[32m[+] Writable: $dir\e[0m"
 done
 
 rm test dirs.txt
