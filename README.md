@@ -15,7 +15,7 @@ Bash script to recursively check for writable directories within an SMB share by
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/smb_write_checker.git
+   git clone https://github.com/808ale/smb_write_checker.git
    cd smb_write_checker
    ```
 
